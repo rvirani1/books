@@ -22,4 +22,7 @@ class UsersController < ApplicationController
     @users = current_user.friends
     render :index
   end
+
+  def show
+  end
 end
