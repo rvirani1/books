@@ -15,6 +15,7 @@
 //= require jquery-ujs
 //= require bootstrap
 //= require angular
+//= require angular-resource
 //= require angular-pusher
 //= require ngInfiniteScroll
 //= require ui-bootstrap-tpls-0.11.0.min

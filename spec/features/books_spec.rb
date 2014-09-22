@@ -39,9 +39,10 @@ feature "Books", js:true do
         expect( page ).to have_content( b.title )
         expect( page ).to have_content( b.author )
         expect( page ).to have_content( b.description)
+        expect( page ).to have
       end
     end
-    it "should display the image of the book"
+
     it "should filter by categories when they are clicked on" do
       category = first('.category-link')
       category.click

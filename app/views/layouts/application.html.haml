@@ -2,7 +2,6 @@
 %html(ng-app="booksApp")
   %head
     %title
-    = stylesheet_link_tag "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'application'
     = include_gon
@@ -15,9 +14,10 @@
         .navbar-header
           = link_to "", root_path, class: "navbar-brand"
 
-        %ul.nav.navbar-nav
+        %ul.nav.navbar-nav#navigation-links
           / Main links will go here
           %li= link_to "Books", books_path
+          %li= link_to "Friendships", friendships_users_path
 
         %ul.nav.navbar-nav.pull-right
           - if current_user

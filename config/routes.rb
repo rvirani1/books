@@ -14,8 +14,12 @@ Rails.application.routes.draw do
       post :friend
       post :unfriend
     end
+    collection do
+      get :friendships
+    end
   end
 
+  get '/requests'        => 'users#requests'
   get '/friends'         => 'users#friends'
   get '/recommendations' => 'books#recommendations'
 

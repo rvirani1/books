@@ -1,4 +1,4 @@
-var app = angular.module("booksApp", ['infinite-scroll', 'ui.bootstrap', 'doowb.angular-pusher'])
+var app = angular.module("booksApp", ['infinite-scroll', 'ui.bootstrap', 'doowb.angular-pusher', 'ngResource'])
   .config(['PusherServiceProvider',
     function(PusherServiceProvider) {
       PusherServiceProvider

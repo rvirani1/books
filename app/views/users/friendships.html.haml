@@ -1,0 +1,43 @@
+.row
+  .col-md-2
+  .col-md-8(ng-controller="FriendshipsCtrl")
+    .friends-content
+      %tabset(ng-init="tab = 1")
+        %tab(heading="Current Friends")
+          %br
+          .tabclass
+            %table.table.table-striped
+              %tbody
+                %tr(ng-repeat="friend in friends")
+                  %td
+                    %img(ng-src="{{friend.image}}")
+                  %td
+                    %h5
+                      {{friend.email}}
+                  %br
+        %tab(heading="Friend Requests")
+          .tabclass
+            %table.table.table-striped
+              %tbody
+                %tr(ng-repeat="request in requests")
+                  %td
+                    %img(ng-src="{{request.image}}")
+                  %td
+                    %h5
+                      {{request.email}}
+                  %td
+                    %a{:href => ""} Accept Request
+                  %br
+        %tab(heading="Users")
+          .tabclass
+            %table.table.table-striped
+              %tbody
+                %tr(ng-repeat="user in users")
+                  %td
+                    %h4
+                      {{user.email}}
+                  %td
+                    %p
+                      %a{:href => ""} Friend User
+
+                  %br
