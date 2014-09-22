@@ -20,4 +20,8 @@ Rails.application.routes.draw do
   get '/recommendations' => 'books#recommendations'
 
   root to: "books#index"
+
+#   Sidekiq stuff
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 end

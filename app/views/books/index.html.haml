@@ -9,7 +9,7 @@
   .col-md-8(ng-controller="booksCtrl" ng-init="booksIndex()" infinite-scroll="loadMore()" infinite-scroll-distance="1")
     .media(ng-repeat="book in showingBooks | filter:categoryFilter")
       %a.pull-left(ng-href= '/books/{{book.id}}')
-        %img.media-object.book-thumbnail(src="{{bookImage(book)}}" alt="")
+        %img.media-object.book-thumbnail(ng-src="{{bookImage(book)}}" alt="")
       .media-body
         %h4.media-heading
           = '{{book.title}}'
