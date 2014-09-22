@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?key=AIzaSyChqf4xEHlqpF7Ly4n4-cbGP3hmkEVt6Ts&q=%20isbn:1594206147
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 18 Sep 2014 21:06:14 GMT
+      Date:
+      - Thu, 18 Sep 2014 21:06:14 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"xZSZjAWLb7i-4HskR60qeOurWSg/shIoJ4gy7WLrVObn8G9rBLo9iQI"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2366'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 1,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "VdDcoAEACAAJ",
+           "etag": "DSjpHX3crdg",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/VdDcoAEACAAJ",
+           "volumeInfo": {
+            "title": "World Order",
+            "authors": [
+             "Henry Kissinger"
+            ],
+            "publisher": "Penguin Press",
+            "publishedDate": "2014-09-09",
+            "description": "A Nobel Peace Prize-winning former national security adviser and secretary of state provides a deep meditation on the roots of international harmony and global disorder.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "1594206147"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9781594206146"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 384,
+            "printType": "BOOK",
+            "categories": [
+             "Biography & Autobiography"
+            ],
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://bks9.books.google.com/books?id=VdDcoAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+             "thumbnail": "http://bks9.books.google.com/books?id=VdDcoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=VdDcoAEACAAJ&dq=isbn:1594206147&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=VdDcoAEACAAJ&dq=isbn:1594206147&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/World_Order.html?hl=&id=VdDcoAEACAAJ"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=VdDcoAEACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "A Nobel Peace Prize-winning former national security adviser and secretary of state provides a deep meditation on the roots of international harmony and global disorder."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 18 Sep 2014 21:06:14 GMT
+recorded_with: VCR 2.9.3

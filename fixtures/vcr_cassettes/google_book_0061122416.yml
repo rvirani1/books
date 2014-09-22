@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?key=AIzaSyChqf4xEHlqpF7Ly4n4-cbGP3hmkEVt6Ts&q=%20isbn:0061122416
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 18 Sep 2014 21:06:14 GMT
+      Date:
+      - Thu, 18 Sep 2014 21:06:14 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"xZSZjAWLb7i-4HskR60qeOurWSg/4D0ItapFsF89XmYpkrEAsEY-aAM"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '3535'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 1,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "pTr44Sx6oWQC",
+           "etag": "gkaGDX9mEP8",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/pTr44Sx6oWQC",
+           "volumeInfo": {
+            "title": "The Alchemist",
+            "authors": [
+             "Paulo Coelho"
+            ],
+            "publisher": "Harper Collins",
+            "publishedDate": "2006-04-25",
+            "description": "\"My heart is afraid that it will have to suffer,\" the boy told the alchemist one night as they looked up at the moonless sky.\" Tell your heart that the fear of suffering is worse than the suffering itself. And that no heart has ever suffered when it goes in search of its dreams.\" Every few decades a book is published that changes the lives of its readers forever. The Alchemist is such a book. With over a million and a half copies sold around the world, The Alchemist has already established itself as a modern classic, universally admired. Paulo Coelho's charming fable, now available in English for the first time, will enchant and inspire an even wider audience of readers for generations to come. The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found. From his home in Spain he journeys to the markets of Tangiers and across the Egyptian desert to a fateful encounter with the alchemist. The story of the treasures Santiago finds along the way teaches us, as only a few stories have done, about the essential wisdom of listening to our hearts, learning to read the omens strewn along life's path, and, above all, following our dreams.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9780061122415"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "0061122416"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 208,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "averageRating": 3.5,
+            "ratingsCount": 2535,
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://bks8.books.google.com/books?id=pTr44Sx6oWQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://bks8.books.google.com/books?id=pTr44Sx6oWQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=pTr44Sx6oWQC&printsec=frontcover&dq=isbn:0061122416&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=pTr44Sx6oWQC&dq=isbn:0061122416&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Alchemist.html?hl=&id=pTr44Sx6oWQC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=pTr44Sx6oWQC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 18 Sep 2014 21:06:14 GMT
+recorded_with: VCR 2.9.3

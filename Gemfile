@@ -54,6 +54,10 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner'
   gem 'launchy'
   gem 'simplecov'
+  gem 'selenium-webdriver'
+  gem 'vcr'
+  gem 'webmock'
 end

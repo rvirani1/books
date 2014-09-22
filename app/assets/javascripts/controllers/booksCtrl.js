@@ -32,7 +32,7 @@ app.controller("booksCtrl", function($scope, $http) {
     if ($scope.showingBooks.length < $scope.bookData.length) {
       var next = $scope.showingBooks.length;
       console.log("Next is ", next);
-      var booksToAdd = $scope.bookData.slice(next, next + 1);
+      var booksToAdd = $scope.bookData.slice(next, next + 2);
       console.log("Books to add", booksToAdd);
       $scope.showingBooks = $scope.showingBooks.concat(booksToAdd);
       console.log($scope.showingBooks);

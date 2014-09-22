@@ -6,7 +6,7 @@
       %tab(heading="Any")
       %tab(heading="Vertical 1")
       %tab(heading="Vertical 2")
-  .col-md-8(ng-controller="booksCtrl" ng-init="booksIndex()" infinite-scroll="loadMore()" infinite-scroll-distance="1")
+  .col-md-8.books(ng-controller="booksCtrl" ng-init="booksIndex()" infinite-scroll="loadMore()" infinite-scroll-distance="1")
     .media(ng-repeat="book in showingBooks | filter:categoryFilter")
       %a.pull-left(ng-href= '/books/{{book.id}}')
         %img.media-object.book-thumbnail(ng-src="{{bookImage(book)}}" alt="")
@@ -18,7 +18,7 @@
         %small.pull-left
           Categories:
           %div(ng-repeat='category in book.categories')
-            %div(ng-click='categoryFilter.categories = book.categories')= '{{category}} '
+            %div.category-link(ng-click='categoryFilter.categories = book.categories')= '{{category}} '
         %small.pull-right= 'ISBN: {{book.isbn}}'
       %hr
   .col-md-1

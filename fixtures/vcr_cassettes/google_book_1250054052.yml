@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?key=AIzaSyChqf4xEHlqpF7Ly4n4-cbGP3hmkEVt6Ts&q=%20isbn:1250054052
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 18 Sep 2014 21:06:15 GMT
+      Date:
+      - Thu, 18 Sep 2014 21:06:15 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"xZSZjAWLb7i-4HskR60qeOurWSg/JsgCPlo46CFGjpNg97VrX1bCKaU"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2651'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 1,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "y8wABAAAQBAJ",
+           "etag": "yGJjUpzg7/s",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/y8wABAAAQBAJ",
+           "volumeInfo": {
+            "title": "What I Know For Sure",
+            "authors": [
+             "Oprah Winfrey"
+            ],
+            "publisher": "Macmillan",
+            "publishedDate": "2014-09-02",
+            "description": "Collects inspirational wisdom shared by the Presidential Medal of Freedom-winning cultural icon as penned for her O column throughout years marked by her retirement from her show, her launch of a television network, her honorary degree from Harvard and other high-profile milestones.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781250054050"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1250054052"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 240,
+            "printType": "BOOK",
+            "categories": [
+             "Body, Mind & Spirit"
+            ],
+            "averageRating": 4.0,
+            "ratingsCount": 11,
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://bks1.books.google.com/books?id=y8wABAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://bks1.books.google.com/books?id=y8wABAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=y8wABAAAQBAJ&printsec=frontcover&dq=isbn:1250054052&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=y8wABAAAQBAJ&dq=isbn:1250054052&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/What_I_Know_For_Sure.html?hl=&id=y8wABAAAQBAJ"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=y8wABAAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Collects inspirational wisdom shared by the Presidential Medal of Freedom-winning cultural icon as penned for her O column throughout years marked by her retirement from her show, her launch of a television network, her honorary degree from ..."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 18 Sep 2014 21:06:15 GMT
+recorded_with: VCR 2.9.3

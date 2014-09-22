@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?key=AIzaSyChqf4xEHlqpF7Ly4n4-cbGP3hmkEVt6Ts&q=%20isbn:014241543X
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 18 Sep 2014 21:06:14 GMT
+      Date:
+      - Thu, 18 Sep 2014 21:06:14 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"xZSZjAWLb7i-4HskR60qeOurWSg/t9bLw92ftDv43JDm0CymK22OSQU"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2419'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 1,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "dC_WjwEACAAJ",
+           "etag": "D134mGbA9yw",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/dC_WjwEACAAJ",
+           "volumeInfo": {
+            "title": "If I Stay",
+            "authors": [
+             "Gayle Forman"
+            ],
+            "publisher": "Puffin",
+            "publishedDate": "2010",
+            "description": "With no memory of the car accident itself, 17-year-old Mia must come to terms with never really knowing what happened one horrific winter's day that changed her life forever. Reprint.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "014241543X"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780142415436"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 259,
+            "printType": "BOOK",
+            "categories": [
+             "Juvenile Fiction"
+            ],
+            "averageRating": 4.0,
+            "ratingsCount": 11,
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://bks5.books.google.com/books?id=dC_WjwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+             "thumbnail": "http://bks5.books.google.com/books?id=dC_WjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=dC_WjwEACAAJ&dq=isbn:014241543X&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=dC_WjwEACAAJ&dq=isbn:014241543X&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/If_I_Stay.html?hl=&id=dC_WjwEACAAJ"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=dC_WjwEACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "With no memory of the car accident itself, 17-year-old Mia must come to terms with never really knowing what happened one horrific winter&#39;s day that changed her life forever. Reprint."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 18 Sep 2014 21:06:14 GMT
+recorded_with: VCR 2.9.3
